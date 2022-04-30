@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<script src="js.js"></script>
+<body onload="setuname()">
+    <header>
+        <div class="logo">Cards</div>
+        <nav>
+
+            <div class=""><a id="uname" href="#"><span class="ocblue">Hello! </span></a></div>
+            <div class="roundbtn"><a href="#">About Us</a></div>
+            <div class="roundbtn"><a href="#">Contact</a></div>
+            
+        </nav>
+    </header>
+    <div class="main">
+    <div class="cards-body">
+        <!-- <div class="card">
+            <div class="namel">Name:</div>
+
+            <div class="namel">Phone:</div>
+
+            <div class="namel">City:</div>
+
+            <div class="namel">Age:</div>
+
+        </div>     -->
+    </div>
+    </div>
+    <script>
+        var profileout=[]
+        var profilestr=localStorage.getItem('profile')
+        profileout.push(JSON.parse(profilestr));
+    //    alert(profile) 
+    //    var mainEle = document.getElementsByClassName('cards-body')[0]
+       
+    //    createCard();
+
+
+
+
+    //    function createCard(){
+    //     var card = document.createElement('div')
+    //     var namel = document.createElement('div')
+    //     namel.innerHTML=profile[0].name; 
+    //     card.appendChild(namel)
+    //     mainEle.appendChild(card);
+
+    //       }
+
+       
+        // var card = document.createElement('div')
+        //     card.className="card"
+        //     var namel = document.createElement('div')
+        //     namel.className="namel"
+        //     namel.innerHTML=element
+        //     card.appendChild(namel)
+        
+            // uname=localStorage.getItem('usrname')
+            // var namespan=document.getElementById('uname')
+            // namespan.innerHTML=uname
+        
+            // uname=localStorage.getItem('spnname')
+            // var unamespan=document.getElementById('dname')
+            // unamespan.innerHTML=uname
+            
+            // city=localStorage.getItem('spncity')
+            // var cityspan=document.getElementById('dcity')
+            // cityspan.innerHTML=city
+
+            // ph=localStorage.getItem('spnph')
+            // var phspan=document.getElementById('dph')
+            // phspan.innerHTML=ph
+
+            // age=localStorage.getItem('spnage')
+            // var emailspan=document.getElementById('dage')
+            // emailspan.innerHTML=age
+            
+
+
+    </script>
+</body>
+</html>
